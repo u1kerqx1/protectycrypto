@@ -30,10 +30,3 @@ def decode(hashed_text, hash_keys):
     	decoded = decoded.replace(hash_keys[c], i)
     	c += 1
     return decoded
-
-keys = get_hash_keys(86)
-encoded = encode("моя мать шлюха!", keys)
-print(f"Hash keys count: {len(keys)}")
-print(f"Encoded: {encoded}")
-print(f"Decoded: {decode(encoded, keys)}")
-input()
